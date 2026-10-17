@@ -5,6 +5,10 @@ import LinkedInIcon from "@/components/icons/linkedin";
 import InlineLink from "@/components/inline-link";
 import ProjectButton from "@/components/project-button";
 
+export const metadata = {
+  title: "David Fiddes",
+};
+
 export default function Page() {
   return (
     <main className="min-h-screen py-32 px-6">
