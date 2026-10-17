@@ -1,6 +1,5 @@
 import IconLink from "@/components/icon-link";
 import EmailIcon from "@/components/icons/email";
-import ExternalLinkIcon from "@/components/icons/external-link";
 import GithubIcon from "@/components/icons/github";
 import LinkedInIcon from "@/components/icons/linkedin";
 import InlineLink from "@/components/inline-link";
@@ -8,7 +7,7 @@ import ProjectButton from "@/components/project-button";
 
 export default function Page() {
   return (
-    <main className="min-h-screen pt-32 px-6">
+    <main className="min-h-screen py-32 px-6">
       <div className="mx-auto max-w-2xl space-y-8">
         <div className="space-y-4">
           <h1 className="font-bold text-3xl">David Fiddes</h1>
@@ -89,7 +88,7 @@ export default function Page() {
                     collection of jobs used for tracking historical player data.
                   </p>
                 </div>
-                <div className="space-y-2 col-span-2">
+                <div className="space-y-2 col-span-full">
                   <h2 className="font-bold text-2xl">Database</h2>
                   <p>
                     Initially started using{" "}
@@ -105,7 +104,7 @@ export default function Page() {
                     of moving over.
                   </p>
                 </div>
-                <div className="space-y-2 col-span-2">
+                <div className="space-y-2 col-span-full">
                   <h2 className="font-bold text-2xl">
                     A feature im proud of: Game History
                   </h2>
@@ -118,7 +117,7 @@ export default function Page() {
                   </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap col-span-full">
                   <InlineLink href="https://hivebackpack.com" showIcon>
                     Website
                   </InlineLink>
@@ -184,7 +183,7 @@ export default function Page() {
                     .
                   </p>
                 </div>
-                <div className="space-y-2 col-span-2">
+                <div className="space-y-2 col-span-full">
                   <h2 className="font-bold text-2xl">What's next?</h2>
                   <p>
                     I am currently in the process of rewriting the frontend to
@@ -194,7 +193,7 @@ export default function Page() {
                   </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap col-span-full">
                   <InlineLink href="https://buttonbot.xyz" showIcon>
                     Website
                   </InlineLink>

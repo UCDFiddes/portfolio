@@ -52,7 +52,7 @@ export default function ProjectButton({
             >
               <BackArrowIcon />
             </button>
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-8">
                 <MotionImage
                   layoutId={`${id}-logo`}
