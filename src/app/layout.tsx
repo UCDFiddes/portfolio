@@ -1,5 +1,22 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+const commitMonoFont = localFont({
+  src: [
+    {
+      path: "./fonts/CommitMono-400-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/CommitMono-700-Regular.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-commit-mono",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`h-full antialiased ${commitMonoFont.variable}`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
